@@ -1,0 +1,17 @@
+
+---
+applications:
+- name: company
+  path: C:\My_Data\Cloud Foundry Training\company-app\build\libs\company.jar
+  memory: 750M
+  instances: 1
+  buildpack: java_buildpack
+  random-route: true
+  services:
+  - companyDB
+  
+  
+  env:
+    ROSTER_A: fixed
+    ROSTER_B: dynamic
+    APP_VERSION: green

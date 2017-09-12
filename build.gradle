@@ -8,6 +8,8 @@ buildscript {
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 	}
+	
+
 }
 
 apply plugin: 'java'
@@ -25,8 +27,13 @@ repositories {
 }
 
 
+
+
 dependencies {
+	runtime('com.h2database:h2')
+	compile('org.springframework.boot:spring-boot-starter-cloud-connectors')
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	compile("org.springframework.boot:spring-boot-starter-actuator")
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('mysql:mysql-connector-java')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
