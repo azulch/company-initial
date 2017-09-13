@@ -1,4 +1,11 @@
 --- 
+spring: 
+  application: 
+    name: company
+  cloud: 
+    config: 
+      uri: ${vcap.services.configServer.credentials.uri}
+
 management:
   security:
     enabled: false
@@ -6,10 +13,3 @@ management:
 security:
   basic:
     enabled: false
-
-spring: 
-  application: 
-    name: company
-  cloud: 
-    config: 
-      uri: ${vcap.services.configServer.credentials.uri}

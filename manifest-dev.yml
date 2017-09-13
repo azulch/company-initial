@@ -10,6 +10,4 @@ applications:
   - companyDB
   - configServer
   env:
-    ROSTER_A: fixed
-    ROSTER_B: dynamic
-    APP_VERSION: green
+    SPRING_PROFILES_ACTIVE: cloud
