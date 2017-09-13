@@ -1,3 +1,5 @@
+
+import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 @RestController
 class MessageController {
