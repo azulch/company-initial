@@ -8,6 +8,7 @@ applications:
   random-route: true
   services:
   - companyDB
+  - configServer
   env:
     ROSTER_A: fixed
     ROSTER_B: dynamic
