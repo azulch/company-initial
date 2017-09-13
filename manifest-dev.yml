@@ -9,5 +9,6 @@ applications:
   services:
   - companyDB
   - configServer
+  timeout: 180
   env:
     SPRING_PROFILES_ACTIVE: cloud
